@@ -28,7 +28,7 @@ body {
 }
 
 .everest {
-  z-index: 999;
+  z-index: 0;
   width: 100%;
   height: 50%;
   margin-top: 25rem;
@@ -46,13 +46,13 @@ body {
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 9rem;
   position: absolute;
   left: 50%;
   top: 30%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 999;
 }
 h1 span {
   font-size: 2.5rem;
@@ -64,13 +64,27 @@ h1 span {
   z-index: 999;
   width: 100%;
   height: 70%;
-  margin-left: -1.2rem;
-  margin-top: -3.1rem;
+  margin-left: -1.25rem;
+  margin-top: -3.5rem;
   object-fit: cover;
   position: absolute;
   background-position: top;
   background-repeat: no-repeat;
-  background: url(./clouds.jpg);
+  background: url(./clouds.png) no-repeat;
+  overflow: hidden;
+}
+
+.sliding-clouds {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 70%;
+  margin-left: 0.2rem;
+  margin-top: 28.1rem;
+  object-fit: cover;
+  position: absolute;
+  background-position: top;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -80,12 +94,13 @@ h1 span {
   text-align: center;
   padding: 50px 20px 20px;
   margin: 0 auto;
-  background: #dbd6d6;
+  background: #dadada;
   margin-top: 0rem;
+  max-width: 100%;
 }
 
 .content h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 500;
   padding-bottom: 2rem;
   color: #000;
@@ -93,7 +108,7 @@ h1 span {
 }
 
 .content h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 2rem;
   font-weight: 500;
   color: #000;
@@ -106,7 +121,7 @@ h1 span {
 
 .heading {
   visibility: hidden;
-  margin-left: 2.9rem;
+  margin-left: 3rem;
   left: 50%;
   top: 30%;
   color: #e60026;
